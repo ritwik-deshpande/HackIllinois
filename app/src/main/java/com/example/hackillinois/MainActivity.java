@@ -64,7 +64,14 @@ public class MainActivity extends AppCompatActivity {
 
     void fetchDataAndInitializeView(String limit){
 
-        AndroidNetworking.get("https://api.hackillinois.org/profile/leaderboard/?limit="+String.valueOf(limit))
+        String api_url = "https://api.hackillinois.org/profile/leaderboard/?limit="+String.valueOf(limit);
+
+        System.out.println(limit);
+        if (limit.compareTo("All") == 0) {
+            api_url = "https://api.hackillinois.org/profile/leaderboard/";
+        }
+
+        AndroidNetworking.get(api_url)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
                     @Override
