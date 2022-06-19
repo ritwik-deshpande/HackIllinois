@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HackIllinois</string>
+    <string name="h1">ID</string>
+    <string name="h2">Discord</string>
+    <string name="h3">Points</string>
+    <string name="row1Name">Ali</string>
+    <string name="row1Age">51</string>
+    <string name="row1Surname">Mohammad</string>
+    <string-array name="planets_array">
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>All</item>
+    </string-array>
+</resources>
